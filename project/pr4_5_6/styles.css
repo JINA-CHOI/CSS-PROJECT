@@ -1,0 +1,166 @@
+@import "reset.css";
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 25px;
+}
+.screen {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  position: relative;
+}
+.screen:nth-child(1) .main {
+  background-color: #ffeb3b;
+}
+.screen:nth-child(2) .main {
+  background-color: #e1bee7;
+}
+.screen:nth-child(3) .main {
+  background-color: #64b5f6;
+}
+.main {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Camera*/
+.screen:nth-child(1) .main__img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid white;
+  background-image: url("img/camera.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.screen:nth-child(1) .hover {
+  width: 400px;
+  height: 300px;
+  background-color: #534bae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10px;
+  position: absolute;
+  opacity: 0;
+  top: 15px;
+  left: 15px;
+  transition: 0.4s ease-in-out;
+}
+/*공통*/
+.hover .title {
+  color: white;
+  font-weight: 600;
+}
+.hover .by {
+  color: #ec407a;
+  font-weight: 600;
+}
+.hover .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #ec407a;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-weight: 400;
+}
+/**/
+.screen:nth-child(1) .hover:hover {
+  opacity: 1;
+}
+
+/*Game Center*/
+
+.screen:nth-child(2) {
+  overflow: hidden;
+}
+
+.screen:nth-child(2) .main__img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid white;
+  background-image: url("img/game.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  border-radius: 30px;
+  transition: 0.5s ease-in-out;
+}
+.screen:nth-child(2) .hover {
+  width: 400px;
+  height: 200px;
+  padding: 10px 10px 10px 10px;
+  background-color: #534bae;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  visibility: visible;
+  z-index: 10px;
+  position: absolute;
+  top: 300px;
+  transition: 0.5s ease-in-out;
+}
+.screen:nth-child(2) .btn {
+  margin-left: 230px;
+}
+.screen:nth-child(2) .main:hover > .main__img {
+  margin-bottom: 100px;
+}
+.screen:nth-child(2) .main:hover + .hover {
+  top: 170px;
+}
+
+/*google*/
+.screen:nth-child(3) .hover {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  background-color: #534bae;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.screen:nth-child(3) .btn {
+  margin-left: 230px;
+}
+.screen:nth-child(3) .main__img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid white;
+  background-image: url("img/playstore.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  border-radius: 30px;
+}
+.screen:nth-child(3) .main {
+  z-index: 100;
+  transition: transform 0.5s ease;
+}
+.screen:nth-child(3) .main:hover {
+  transform: translateY(-50px) scale(0.5);
+}
