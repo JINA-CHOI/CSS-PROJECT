@@ -1,0 +1,256 @@
+@import "reset.css";
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(226, 238, 243);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  margin: 30px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  width: 381px;
+  height: 824px;
+  background: linear-gradient(
+      to bottom,
+      rgba(225, 222, 233, 0) 10%,
+      rgba(255, 255, 255, 0.5) 25%,
+      rgba(255, 255, 255, 0.7) 40%,
+      rgb(236, 244, 247) 50%,
+      rgb(255, 255, 255) 100%
+    ),
+    url("img/spain_4.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 30px;
+  font-family: "Encode Sans Expanded", sans-serif;
+}
+/*상단바*/
+.status-bar {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.status-bar__column {
+  margin-left: 32px;
+  margin-right: 32px;
+  color: white;
+}
+.icon {
+  color: white;
+  margin-left: 2px;
+}
+/*메인사진*/
+.main-img {
+  height: 305px;
+  margin: 32px 32px 10px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-img__icon {
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+  cursor: pointer;
+}
+.main-img__otherimg {
+  /*border: 1px solid yellow;*/
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+.otherimg {
+  /*border: 1px solid blue;*/
+  width: 51px;
+  height: 51px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.text4 {
+  background-image: url("img/spain_2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+/*메인텍스트*/
+.main {
+  /*border: 1px solid red;*/
+  margin: 0px 28px;
+
+  flex-direction: column;
+  color: #020202;
+}
+.main-keyword {
+  display: flex;
+  justify-content: flex-start;
+}
+.keyword {
+  font-size: 10px;
+  background-color: rgb(202, 213, 238);
+  color: rgb(57, 54, 230);
+  font-weight: bold;
+  height: 30px;
+  margin-right: 11px;
+  border-radius: 30px 30px 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+}
+.main-title {
+  /*border: 1px solid purple;*/
+  font-size: 27px;
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #020202;
+}
+.title-text {
+  font-weight: bold;
+  margin-left: 5px;
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+.title-icon {
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-positon {
+  margin-top: 10px;
+  /*border: 1px solid blue;*/
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 13px;
+}
+.position-icon {
+  margin-right: 10px;
+  color: rgb(61, 101, 212);
+}
+.position-text,
+.detail-meter {
+  color: rgb(184, 182, 182);
+}
+
+.detail {
+  margin-top: 20px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.star {
+  color: orange;
+}
+.star-num {
+  margin-left: 5px;
+}
+.overview {
+  font-size: 13px;
+
+  margin-top: 30px;
+  line-height: 23px;
+  text-align: justify;
+}
+.overview__title {
+  font-size: 8px;
+  color: rgb(184, 182, 182);
+}
+.overview__detail {
+  color: rgb(148, 147, 147);
+}
+.readmore {
+  color: rgb(61, 101, 212);
+  font-weight: 900;
+  font-size: 14px;
+  margin-top: 18px;
+}
+/*아래하단바*/
+.nav {
+  /*border: 1px solid purple;*/
+  border: 1px solid rgba(255, 255, 255, 0);
+  position: relative;
+}
+.nav__list {
+  margin-top: 52px;
+  /*border: 1px solid green;*/
+  border: 1px solid rgba(255, 255, 255, 0);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  height: 90px;
+  font-size: 20px;
+  color: rgb(184, 182, 182);
+}
+
+.road {
+  border: 15px solid rgb(61, 101, 212);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(61, 101, 212);
+  transform: rotate(-45deg);
+  box-shadow: 0px 5px 5px rgb(111, 113, 126);
+  transition: all 0.4s ease;
+}
+.road:hover {
+  transform: rotate(-50deg) scale(1.2);
+  cursor: pointer;
+}
+.roadcover {
+  border-top: 15px solid rgb(222, 237, 253);
+  border-left: 15px solid rgb(222, 237, 253);
+  border-right: 12px solid rgba(255, 255, 255, 0);
+  border-bottom: 12px solid rgba(255, 255, 255, 0);
+  transform: rotate(45deg);
+  width: 87px;
+  height: 87px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 4px;
+  left: 144px;
+}
+.btn {
+  /*border: 1px solid red;*/
+  border: 1px solid rgba(255, 255, 255, 0);
+  width: 40px;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  color: rgb(61, 101, 212);
+  cursor: pointer;
+  border-top: 3px solid rgb(61, 101, 212);
+}
+
+.btn:active {
+  color: rgb(61, 101, 212);
+  border-top: 3px solid rgb(61, 101, 212);
+}
