@@ -1,3 +1,4 @@
+@import "reset.css";
 .container {
     font-family: sans-serif;
     height: 1500px;
@@ -107,10 +108,24 @@ a:link, a:visited, a:active{text-decoration: none;}
 .detailContent{
     margin-top: 10px;
     font-family: 'Nanum Gothic', sans-serif;
-    /*background-color: rgb(225, 78, 95);*/
     text-align: center;
     font-weight: bold;
 }
+
+.detailBtn{
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.detailBtn a{
+    text-decoration: none;
+    text-decoration-line: none;
+    color: rgba(185, 185, 185, 0.997);
+    font-size: 13px;
+}
+
 
 
 
