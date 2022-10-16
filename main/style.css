@@ -1,4 +1,5 @@
 @import "reset.css";
+
 .container {
     font-family: sans-serif;
     height: 1500px;
@@ -9,7 +10,7 @@
     
 }
 
-/*헤더*/  
+/*header*/  
 .header {
     z-index: 10;
     background-color: rgb(255, 255, 255);
@@ -62,7 +63,7 @@ a:link, a:visited, a:active{text-decoration: none;}
     color: black;
 }
 
-/*중간내용*/
+/*main*/
 .main{
     
     width: 100%;
