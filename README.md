@@ -17,7 +17,7 @@
 <br/>
 
 # 📖포트폴리오
-제작중
+https://ambitious-corn-b6c.notion.site/CSS-PROJECT-ba18638d0bcd4717bc9251ec08c86257
 
 <br/>
 <br/>
