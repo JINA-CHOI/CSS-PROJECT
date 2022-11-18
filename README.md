@@ -4,7 +4,7 @@
 <br/>
  
  # 👩🏻‍💻구현
- https://jina-choi.github.io/CSS-PROJECT/main/main.html
+ https://jina-choi.github.io/css-project/main/main.html
 
 <br/>
 <br/>
